@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hug Day Special</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f8ecd1;
+            background:url(https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/6519889/600/400/m2/fpnw/wm0/12-.jpg?1560246853&s=212715eb92104b92e3873af4fad9457e) no-repeat 0 0/100%;
+}
+        
+
+        .hug-container {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px; /* Limit container width for better readability on larger screens */
+            width: 90%; /* Set a percentage width for responsiveness */
+        }
+
+        h1 {
+            color: #e44d26;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .hug-image {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .hug-message {
+            font-size: 20px;
+            color: #e44d26;
+            margin-top: 20px;
+        }
+
+        /* Media query for smaller screens (e.g., mobile devices) */
+        @media (max-width: 600px) {
+            .hug-image {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="hug-container">
+        <h1>Happy Hug Day!</h1>
+        <p>Wrap yourself in the warmth of a virtual hug. Sending you love and comfort!</p>
+        <img src="https://media1.tenor.com/images/e3a906a565a5ed8c11b4d940c10ca06f/tenor.gif?itemid=12129586" class="svg" width="200" >
+        <p class="hug-message">Feel the embrace and remember that you are loved.</p>
+    </div>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('refresh')) {
+        // Redirect to the game page without adding a new history entry
+        window.location.replace('index.html');
+    } else {
+        // Add the refresh parameter to the URL
+        window.history.replaceState({}, document.title, window.location.pathname + '?refresh=true');
+    }
+    </script>
+</body>
+</html>

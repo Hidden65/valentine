@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise Day</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #ffe6e6;
+        }
+
+        .promise-container {
+            background:url(https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/6519889/600/400/m2/fpnw/wm0/12-.jpg?1560246853&s=212715eb92104b92e3873af4fad9457e) no-repeat 0 0/100%;
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px; /* Limit container width for better readability on larger screens */
+            width: 90%; /* Set a percentage width for responsiveness */
+        }
+
+        h1 {
+            color: #e44d26;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .promise-card {
+            display: flex;
+            flex-wrap: wrap; /* Allow cards to wrap onto the next line on smaller screens */
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .promise {
+            flex: 1;
+            padding: 15px;
+            margin: 10px;
+            background-color: #f7f7f7;
+            border-radius: 5px;
+            max-width: 300px; /* Limit card width for better readability on larger screens */
+        }
+
+        .promise:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .promise h2 {
+            color: #e44d26;
+        }
+
+        .promise p {
+            color: #666;
+        }
+
+        /* Media query for smaller screens (e.g., mobile devices) */
+        @media (max-width: 600px) {
+            .promise {
+                flex: 1 0 100%; /* Make cards full width on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body >
+    <div class="promise-container">
+        <h1>Happy Promise Day!</h1>
+        <p>On this special day, I make these promises to you:</p>
+        <div class="promise-card">
+            <div class="promise">
+                <h2>1. Unconditional Love</h2>
+                <p>I promise to love you unconditionally, with all your strengths and weaknesses.</p>
+            </div>
+            <div class="promise">
+                <h2>2. Support and Understanding</h2>
+                <p>I promise to support you in all your endeavors and strive to understand you better every day.</p>
+            </div>
+            <div class="promise">
+                <h2>3. Laughter and Joy</h2>
+                <p>I promise to bring laughter and joy into our lives, cherishing the happy moments we create together.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('refresh')) {
+        // Redirect to the game page without adding a new history entry
+        window.location.replace('index.html');
+    } else {
+        // Add the refresh parameter to the URL
+        window.history.replaceState({}, document.title, window.location.pathname + '?refresh=true');
+    }
+    </script>
+</body>
+</html>

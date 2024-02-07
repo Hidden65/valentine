@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Document</title>
+   
+</head>
+<body background="EnglishWithSophia.gif">
+<style>
+        body {
+            background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--primary); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     width: 100%; 
+     height: 100vh; 
+    font-family: "Figtree";
+    background-color : #eec7e0;
+}
+
+:root {
+    --primary: hsl(239, 80%, 73%);
+    --secondary: hsl(0, 0%, 7%);
+    --neutral: hsl(0, 0%, 50%);
+    --card-color: hsl(0, 0%, 100%);
+    --active: hsl(256, 70%, 69%);
+}
+
+
+main {
+    background-color: var(--card-color);
+    width: 30rem;
+    height: auto;
+    padding: 1.5rem;
+    border: 1px solid var(--secondary);
+    border-radius: 18px;
+    box-shadow: 0.5rem 0.5rem var(--secondary);
+    display: flex;
+    flex-direction: column;
+    justify-items:center ;
+}
+.rounded-social-buttons {
+  text-align: center;
+}
+
+      
+
+@media screen and (max-width: 430px) {
+    main {
+        width: 21.5rem;
+        height: auto;
+        padding: 1.3rem;
+    }
+
+}
+
+@media screen and (max-width: 378px) {
+    main {
+        width: 19rem;
+        height: auto;
+    }
+
+    
+}
+
+@keyframes heartfade {
+  0% {
+    opacity : 1;
+  }
+  50% {
+    opacity : 0;
+  }
+}
+
+
+/* .rounded-social-buttons {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+} */
+button {
+  margin: 20px;
+}
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+   /* font-family: 'Lato', sans-serif; */
+   font-weight: 500; 
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+/* 8 */
+.btn-8 {
+  background-color: #f0ecfc;
+background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-8 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-8:before,
+.btn-8:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #c797eb;
+  /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
+  transition: all 0.3s ease;
+}
+.btn-8:before{
+   height: 0%;
+   width: 2px;
+}
+.btn-8:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-8:hover:before {
+  height: 100%;
+}
+.btn-8:hover:after {
+  width: 100%;
+}
+.btn-8:hover{
+  background: transparent;
+}
+.btn-8 span:hover{
+  color: #c797eb;
+}
+.btn-8 span:before,
+.btn-8 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #c797eb;
+  /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
+  transition: all 0.3s ease;
+}
+.btn-8 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-8 span:after {
+  height: 2px;
+  width: 0%;
+}
+.btn-8 span:hover:before {
+  height: 100%;
+}
+.btn-8 span:hover:after {
+  width: 100%;
+}
+  
+
+</style>
+
+
+  <div class="background"></div>
+
+<main class="card">
+<div class="rounded-social-buttons">
+    <a href="rose.html"><button class="custom-btn btn-8"><span>DAY 1</span></button></a>
+    <!-- <a href="Propose.html"><button class="custom-btn btn-8"> <span>DAY 2</span></button></a>
+    <a href="Chocolate.html"><button class="custom-btn btn-8"><span>DAY 3</span></button></a>
+    <a href="Promise.html"><button class="custom-btn btn-8"><span>DAY 4</span></button></a>
+    <a href="Teddy.html"><button class="custom-btn btn-8"><span>DAY 5</span></button></a>
+    <a href="Hug.html"><button class="custom-btn btn-8"><span>DAY 6</span></button></a>
+    <a href="Kiss.html"><button class="custom-btn btn-8"><span>DAY 7</span></button></a>
+    <a href="Valentine.html"><button class="custom-btn btn-8"><span>DAY 8</span></button></a> -->
+   </div>
+</main>
+</body>
+</html>
