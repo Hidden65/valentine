@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valentine's Day Countdown</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body background="bgg.png">
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff00;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size:auto;
+}
+
+.countdown {
+  text-align: center;
+}
+
+#timer {
+    font-size: 5rem;
+  color: #ff0000;
+  margin-top: 20px;
+}
+h1{
+    margin-top: -8%;
+    font-size: 3rem;
+color: #ff0000;
+}
+
+    </style>
+<div class="countdown">
+  <h1>Countdown to Valentine's Day</h1>
+  <div id="timer"></div>
+</div>
+<script src="script.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+  var valentinesDay = new Date("2024-02-14T00:00:00");
+  var timerElement = document.getElementById("timer");
+
+  function updateTimer() {
+    var currentTime = new Date();
+    var timeDifference = valentinesDay - currentTime;
+
+    var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+    timerElement.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+  }
+
+  setInterval(updateTimer, 1000);
+  updateTimer();
+});
+
+</script>
+</body>
+</html>
