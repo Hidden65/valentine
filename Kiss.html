@@ -8,18 +8,28 @@
 <body>
   <style>
 body{
-  background-color:#78e08f;
+  background-color:#e078c4;
   margin:0;
 }
 
+
 .container{
+  text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.804);
+            max-width: 700px; /* Limit container width for better readability on larger screens */
+            /* width: 80%; Set a percentage width for responsiveness */
+
   margin: auto;
   position: absolute;
   top: 50%; left: 50%;
   -webkit-transform: translate(-50%,-50%);
       -ms-transform: translate(-50%,-50%);
           transform: translate(-50%,-50%);
-  width:232px;
+  width:300px;
+  height: 560px;
 }
 
 .face{
@@ -86,7 +96,7 @@ body{
   content:"";
   width:18px;
   height:8px;
-  background-color:#badc58;
+  background-color:#dc586a;
   left:-5px;
   top:20px;
   border-radius:50%;
@@ -97,7 +107,7 @@ body{
   content:"";
   width:18px;
   height:8px;
-  background-color:#badc58;
+  background-color:#dc586a;
   right:-8px;
   top:20px;
   border-radius:50%;
@@ -199,12 +209,41 @@ body{
   100%{transform:translate(0) rotate(0);}
 }
 
-
+h1 {
+  font-size: 2em;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  display: inline;
+  color: #f162cb; /* Love pink */
+}
+p {
+  font-size: 1em;
+  font-family: 'Arial', sans-serif;
+  margin: 10;
+  
+  color: #a13d87; /* Love pink */
+}
+img{
+  width: 150px;
+  margin: 10px;
+}
   </style>
 
 
 
   <div class='container'>
+    
+    <div class="containe">
+      <h1>Happy</h1>
+      <h1>kiss</h1>
+      <h1>Day </h1>
+      <h1>😘</h1>
+      <img src="k1.gif" alt="" srcset="">
+      <p>
+        I always blush whenever I think of our first kiss. It will always be special to me more than anything. Happy Kiss Day. 
+      </p>
+      
+    </div><br>
     <div id='l-ball' class='ball'>
       <div class='face face-l'>
         <div class='eye eye-l'></div>
@@ -224,5 +263,6 @@ body{
       </div>
     </div>
   </div>
+
 </body>
 </html>
