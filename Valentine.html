@@ -42,7 +42,7 @@ color: #ff0000;
 </div>
 <script src="script.js"></script>
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
+   document.addEventListener("DOMContentLoaded", function() {
   var valentinesDay = new Date("2024-02-14T00:00:00");
   var timerElement = document.getElementById("timer");
 
@@ -50,17 +50,23 @@ color: #ff0000;
     var currentTime = new Date();
     var timeDifference = valentinesDay - currentTime;
 
-    var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+    if (timeDifference <= 0) {
+      // Redirect to another website
+      window.location.href = "https://hidden65.github.io/tic-tac-toe1/"; // Replace "https://example.com" with the URL you want to redirect to
+    } else {
+      var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
-    timerElement.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+      timerElement.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    }
   }
 
   setInterval(updateTimer, 1000);
   updateTimer();
 });
+
 
 </script>
 </body>
